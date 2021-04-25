@@ -3,6 +3,6 @@ permalink: /resume/
 title: "Resume"
 excerpt: "Resume"
 layouts_gallery:
-toc:false
+toc: false
 ---
 Coming soon...
