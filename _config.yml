@@ -20,7 +20,7 @@ twitter_username: #username
 github_username: #username
 minimal_mistakes_skin: default
 search: true
-
+words_per_minute: 75
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes

@@ -1,7 +1,7 @@
 # main links
 main:
    - title: "Resume"
-     url: /resume/
+     url: /assets/docs/Kevin_Wang_Resume.pdf
    - title: "About"
      url: /about/
    - title: "Posts"

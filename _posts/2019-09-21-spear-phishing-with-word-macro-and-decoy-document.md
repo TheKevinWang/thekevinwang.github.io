@@ -1,11 +1,12 @@
 ---
 title:  "Spear Phishing with Word Macro and Decoy Document"
 categories: 
-  - web
-tags:
-  - open redirect
   - phishing
-  - google
+tags:
+  - spear phishing
+  - Microsoft Word
+  - macro
+  - decoy
 toc: false
 ---
 Microsoft Word macros are often utilized in spear phishing attacks. These documents typically include a lure to trick the user into clicking "Enable Content." However, after executing the payload, the user may become suspicious of the lack of effect. As users are increasingly aware of cyber threats and the importance of reporting such attacks, the use of a "decoy" document becomes necessary for a successful penetration test.
