@@ -15,7 +15,7 @@ toc: false
 
 Probing sandbox environments:
 
-I created .exe, .js, and .doc macro payloads that will use powershell to run various commands, such as `ls $env:userprofile\Desktop`, `netstat`, `ps`, wmi, etc to gather information about the host and upload it to Dropbox. This avoids the need to burn a C2 server. I found the .doc macro payload to be particularly effective in generating sandbox executions. I then uploaded the payload to VirusTotal, resulting in myrids of antiviruses running the payload in their sandboxes.
+I created .exe, .js, and .doc macro payloads that will use powershell to run various commands, such as `ls $env:userprofile\Desktop`, `netstat`, `ps`, wmi, etc to gather information about the host and upload it to Dropbox. This avoids the need to burn a C2 server. I found the .doc macro payload to be particularly effective in generating sandbox executions, though this will likely change as attackers migrate away from macro payloads. I then uploaded the payload to VirusTotal, resulting in myrids of antiviruses running the payload in their sandboxes.
 After analyzing the data, I found numerous anamolies, such as: 
 * the presence of multiple obvious "honey" files, such as "passwords.txt" 
 * lack of network activity, such as absence of connections with TIME_WAIT, CLOSE_WAIT, FIN_WAIT state.
@@ -28,4 +28,4 @@ After analyzing the data, I found numerous anamolies, such as:
 * presence of high entropy randomized file names.
 * lack of media PnP devices
 
-I have written a tool to detect the sandboxes used by VT, and I have the confirmed it no longer runs my payload after doing the sandbox check. I released the tool on GitHub [https://github.com/TheKevinWang/Check-Sandbox](https://github.com/TheKevinWang/Check-Sandbox). I'm glad I looked into it myself because al-khaser checks if the memory is under 1GB instead of 2GB, and misses most of the honey files. Furthermore, I implemented a limit for honey file matches, since a single "passwords.txt" in Desktop could be legit, but not both "passwords.txt" and "accounts.xlsx". However, the malware sandboxes will continue to adapt. 
+I have written a tool to detect the sandboxes used by VT, and I have the confirmed it no longer runs my payload after doing the sandbox check. I used a custom obfuscator for all the scripts I uploaded to VT. I released the tool on GitHub [https://github.com/TheKevinWang/Check-Sandbox](https://github.com/TheKevinWang/Check-Sandbox). I'm glad I looked into it myself because al-khaser checks if the memory is under 1GB instead of 2GB, and misses most of the honey files. Furthermore, I implemented a limit for honey file matches, since a single "passwords.txt" in Desktop could be legit, but not both "passwords.txt" and "accounts.xlsx". However, the malware sandboxes will continue to adapt. 
