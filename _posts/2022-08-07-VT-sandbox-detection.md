@@ -1,12 +1,10 @@
 ---
-title:  "Probing VirusTotal sandboxes for custom detection markers."
+title:  "Probing antivirus sandboxes for custom detection markers."
 categories: 
   - av-bypass
 tags:
   - sandbox
   - antivirus
-  - malware
-  - VirusTotal
   - implant
 toc: false
 ---
@@ -15,7 +13,7 @@ toc: false
 
 Probing sandbox environments:
 
-I created .exe, .js, and .doc macro payloads that will use powershell to run various commands, such as `ls $env:userprofile\Desktop`, `netstat`, `ps`, wmi, etc to gather information about the host and upload it to Dropbox. This avoids the need to burn a C2 server. I found the .doc macro payload to be particularly effective in generating sandbox executions. I then uploaded the payload to VirusTotal, resulting in myrids of antiviruses running the payload in their sandboxes.
+I created .exe, .js, and .doc macro payloads that will use powershell to run various commands, such as `ls $env:userprofile\Desktop`, `netstat`, `ps`, wmi, etc to gather information about the host and upload it to Dropbox. This avoids the need to burn a C2 server. I found the .doc macro payload to be particularly effective in generating sandbox executions. I then uploaded the payload to virustotal, resulting in myrids of antiviruses running the payload in their sandboxes. 
 After analyzing the data, I found numerous anamolies, such as: 
 * the presence of multiple obvious "honey" files, such as "passwords.txt" 
 * lack of network activity, such as absence of connections with TIME_WAIT, CLOSE_WAIT, FIN_WAIT state.
