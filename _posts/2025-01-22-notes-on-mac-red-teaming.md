@@ -1,3 +1,5 @@
+Some notes after performing red teaming of the Mac environment of an F500 company. 
+
 Not all ideas are mine. just some notes. 
 
 # detection
