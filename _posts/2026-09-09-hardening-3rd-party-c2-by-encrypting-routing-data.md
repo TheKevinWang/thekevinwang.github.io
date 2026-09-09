@@ -11,9 +11,9 @@ tl;dr: most 3rd party c2s send unencrypted routing data and use base64. I encryp
 
 ## the problem
 
-So the discord profile sends unencrypted json with various routing fields, such as "to_server", "client_id", "message", etc. Both the 3rd party c2 admins and modern IDSs, EDRs should be able to detect this kind of signal. 
+So the Mythic C2 discord profile sends unencrypted json with various routing fields, such as "to_server", "client_id", "message", etc. Both the 3rd party c2 admins and modern IDSs, EDRs should be able to detect this kind of signal. 
 
-I remember back in the day, using the Empire dropbox listener, which used names like `<sessionID>_1.txt` for files. This resulted in dropbox accounts getting silently banned, which resulted in me being lazy and manually changing these values instead of fixing it for good (this was way before ai). 
+I remember back in the day, using the Empire dropbox listener, which used names like `<sessionID>_1.txt` for files. This resulted in dropbox accounts getting silently banned, which resulted in me being lazy and manually changing these values instead of fixing it for good (this was way before AI). 
 
 ## the solution
 
@@ -59,7 +59,5 @@ A useful comparison would evaluate communication designs across four dimensions:
 
 This leads to a broader question:
 
-What would an optimal third-party C2 communication method look like if it had to balance transport efficiency, the agent's endpoint-detection surface, the detectability of its carrier activity, and strong cryptographic security?
-
-More practically: where is the best tradeoff, and how should it change for different carriers, threat models, and operational requirements? 
+Where is the best tradeoff, and how should it change for different carriers, threat models, and operational requirements? 
 
