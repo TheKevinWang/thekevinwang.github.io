@@ -32,9 +32,9 @@ To further complicate detection, I also made it so that the transport encoding (
 ## demo
 
 What was this:
-![d7126ae8a7d12cb77a37a7dc9fc611ee.png](/_resources/d7126ae8a7d12cb77a37a7dc9fc611ee.png)
+![d7126ae8a7d12cb77a37a7dc9fc611ee.png](/assets/images/d7126ae8a7d12cb77a37a7dc9fc611ee.png)
 becomes this:
-![7f70591b6a383aec316822570cf6c2bc.png](/_resources/7f70591b6a383aec316822570cf6c2bc.png)
+![7f70591b6a383aec316822570cf6c2bc.png](/assets/images/7f70591b6a383aec316822570cf6c2bc.png)
 which decodes to this encrypted blob:
 ```
 00000000: 26 2a eb 21 0e 6f 1b 07 69 02 47 36 3b 1f 23 ba  &*.!.o..i.G6;.#.
